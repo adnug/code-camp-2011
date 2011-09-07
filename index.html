@@ -16,7 +16,9 @@
 		<script type="text/javascript">
 		//<![CDATA[
 		$(function() {
-			($("#content").tabs())();
+        $("#content").tabs();
+
+        $('#schedule table tbody tr:nth-child(2n)').addClass('alt-row');
     });
 
 
@@ -76,9 +78,10 @@
 
       #schedule table {
         font-size:10px;
+        border-collapse: collapse;
       }
 
-      #schedule table tbody tr:nth-child(even) {
+      .alt-row {
         background:#e5ecf9;
       }
 
@@ -173,7 +176,7 @@
                 <td>Things I Wish I Knew A Year Ago - Windows Phone Development<br/><em>Scott Peterson</em></td>
                 <td>None</td>
               </tr>
-              <tr class="lunch">
+              <tr>
                 <th colspan="7">Lunch</th>
               </tr>
               <tr>
